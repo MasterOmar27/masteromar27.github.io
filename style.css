@@ -77,10 +77,9 @@ body.dark-mode .main-content {
 }
 
 .main-content:hover {
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
-  transform: scale(1.03);
-  border-color: var(--accent);
-  background: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 25px var(--accent), 0 0 50px var(--accent);
+  transform: scale(1.06);
+  background: rgba(0, 255, 255, 0.08);
 }
 
 .main-content h2 {
@@ -116,10 +115,9 @@ body.dark-mode .notes-section {
 }
 
 .notes-section:hover {
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
-  transform: scale(1.02);
-  border-color: var(--accent);
-  background: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 25px var(--accent), 0 0 50px var(--accent);
+  transform: scale(1.05);
+  background: rgba(0, 255, 255, 0.08);
 }
 
 /* Note cards */
@@ -147,9 +145,8 @@ body.dark-mode .notes-section {
 }
 
 .note-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
-  transform: translateY(-3px);
-  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
+  transform: translateY(-6px) scale(1.05);
 }
 
 body.dark-mode .note-card {
@@ -193,7 +190,7 @@ body.dark-mode .site-footer {
 }
 
 .site-footer:hover {
-  box-shadow: 0 8px 40px rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 25px var(--accent), 0 0 50px var(--accent);
 }
 
 .footer-content {
@@ -248,13 +245,14 @@ body.dark-mode .site-footer {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  transition: color 0.3s, text-shadow 0.3s;
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
   cursor: default;
 }
 
 #clock:hover {
   color: var(--accent-dark);
-  text-shadow: 0 0 8px var(--accent);
+  text-shadow: 0 0 12px var(--accent), 0 0 25px var(--accent);
+  transform: scale(1.1);
 }
 
 /* Navbar */
@@ -269,7 +267,7 @@ body.dark-mode .site-footer {
   text-decoration: none;
   margin: 0 0.7rem;
   position: relative;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.3s;
 }
 
 .main-nav a::after {
@@ -290,6 +288,7 @@ body.dark-mode .site-footer {
 
 .main-nav a:hover {
   color: var(--accent);
+  transform: scale(1.15);
 }
 
 body.dark-mode .main-nav a:hover {
