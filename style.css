@@ -236,7 +236,6 @@ header .info-text .scroll::before{
 
 }
 
-/* GENEL FONT */
 *{
   margin: 0;
   padding: 0;
@@ -244,7 +243,6 @@ header .info-text .scroll::before{
   font-family: 'Quicksand', sans-serif;
 }
 
-/* HEADER */
 header{
   width: 100%;
   height: 100vh;
@@ -264,7 +262,7 @@ header{
   top: 0;
   left: 0;
   z-index: 10;
-  background: rgba(43, 47, 75, 0.4); /* Cam efekti için yarı şeffaf */
+  background: rgba(43, 47, 75, 0.4); 
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -295,7 +293,6 @@ header{
   color: #00f0ff;
 }
 
-/* HEADER INFO TEXT */
 header .info-text{
   display: flex;
   flex-direction: column;
@@ -317,7 +314,6 @@ header .info-text h3{
   font-size: 1.5rem;
 }
 
-/* FOOTER */
 footer{
   background-color: #1f2233;
   color: #fff;
@@ -380,18 +376,16 @@ footer .social-icons a{
 footer .social-icons a:hover{
   color: #00f0ff;
 }
-/* Card hover efektleri */
 #about .card, #features .card {
   transition: all 0.4s ease-in-out;
 }
 
 #about .card:hover, #features .card:hover {
-  transform: scale(1.05); /* Hafif büyüme */
-  box-shadow: 0 15px 25px #00f0ff; /* Neon renkli gölge */
+  transform: scale(1.05); 
+  box-shadow: 0 15px 25px #00f0ff; 
   border-color: #00f0ff;
 }
 
-/* İkon ve başlığa hafif hareket ekleyelim */
 #features .feature-cards .card .info i,
 #features .feature-cards .card .info h1 {
   transition: transform 0.3s ease;
@@ -404,7 +398,6 @@ footer .social-icons a:hover{
 #features .feature-cards .card:hover .info h1 {
   transform: translateY(-5px);
 }
-/* CONTACT SECTION */
 #contact {
   background-color: #2b2f4b;
   color: #fff;
@@ -491,20 +484,18 @@ footer .social-icons a:hover{
   color: #00f0ff;
 }
 
-/* Responsive */
 @media screen and (max-width: 900px) {
   .contact-container {
       flex-direction: column;
   }
 }
 
-/* Project button inside cards */
 .project-btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #00f0ff; /* Neon-mavi */
-  color: #000; /* Yazı rengi */
+  background-color: #00f0ff; 
+  color: #000; 
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -516,7 +507,6 @@ footer .social-icons a:hover{
   box-shadow: 0 8px 20px rgba(0, 240, 255, 0.5);
   transform: scale(1.05);
 }
-/* Modal */
 .blog-modal {
   display: none;
   position: fixed;
@@ -527,7 +517,7 @@ footer .social-icons a:hover{
   height: 100%;
   overflow-y: auto;
   background-color: rgba(0,0,0,0.7);
-  backdrop-filter: blur(5px); /* Bulanık arka plan */
+  backdrop-filter: blur(5px);
 }
 
 .blog-modal-content {
@@ -544,16 +534,15 @@ footer .social-icons a:hover{
 .blog-modal-content h2 {
   color: #00f0ff;
   margin-bottom: 25px;
-  font-size: 1.5rem;  /* Başlıq ölçüsünü böyütdük */
+  font-size: 1.5rem;  
 }
 
 .blog-modal-content p {
-  line-height: 1.5;    /* Oxunaqlılığı artırmaq üçün */
-  font-size: 1rem;   /* Yazı ölçüsünü böyütdük */
+  line-height: 1.5;   
+  font-size: 1rem;   
 }
 
 
-/* Kapatma butonu */
 .blog-modal .close {
   position: absolute;
   top: 20px;
@@ -569,17 +558,15 @@ footer .social-icons a:hover{
   color: #00d2ff;
 }
 
-/* Blog button */
-/* Blog button */
 .open-blog {
-  padding: 12px 25px;       /* Biraz daha böyük padding */
+  padding: 12px 25px;       
   margin-top: 15px;
   border: none;
   border-radius: 8px;
   background-color: #00f0ff;
   color: #000;
-  font-weight: 700;          /* Yazını daha qalın etdik */
-  font-size: 1.1rem;         /* Yazının ölçüsünü artırdıq */
+  font-weight: 700;          
+  font-size: 1.1rem;        
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -620,11 +607,11 @@ footer .social-icons a:hover{
 #blog .feature-cards .card .info h1{
   text-align: center;
   margin-bottom: 15px;
-  color: #fff; /* Başlıkları beyaz yaptık */
+  color: #fff; 
   transition: transform 0.3s ease;
 }
 #blog {
-  background-color: #2b2f4b; /* Features ve About ile uyumlu koyu renk */
+  background-color: #2b2f4b; 
   padding: 40px;
 }
 #blog .feature-cards .card .info p{
@@ -633,7 +620,6 @@ footer .social-icons a:hover{
   text-align: center;
 }
 
-/* Hover efektleri (Features ile aynı) */
 #blog .feature-cards .card:hover{
   transform: scale(1.05);
   box-shadow: 0 15px 25px #00f0ff;
@@ -648,7 +634,6 @@ footer .social-icons a:hover{
   transform: translateY(-5px);
 }
 
-/* Blog Header Başlığı Features ile uyumlu */
 #blog .header {
   display: flex;
   justify-content: space-between;
@@ -656,8 +641,6 @@ footer .social-icons a:hover{
   margin-bottom: 40px;
 }
 
-/* Blog Header Başlığı Features ile tamamen aynı */
-/* Tüm bölümlerin header başlıkları */
 #about .header h1,
 #features .header h1,
 #blog .header h1,
@@ -668,11 +651,6 @@ footer .social-icons a:hover{
     font-size: 2rem; 
     letter-spacing: 1px;
 }
-/* -------------------------
-   Responsive Ayarlar
--------------------------- */
-
-/* Tablet ve küçük ekranlar */
 @media (max-width: 992px) {
   .nav-links {
       gap: 15px;
@@ -693,7 +671,6 @@ footer .social-icons a:hover{
   }
 }
 
-/* Mobil cihazlar */
 @media (max-width: 768px) {
   nav.navbar {
       flex-direction: column;
@@ -727,7 +704,6 @@ footer .social-icons a:hover{
   }
 }
 
-/* Çok küçük ekranlar (telefonlar) */
 @media (max-width: 480px) {
   .info-text h1 {
       font-size: 1.6rem;
@@ -749,33 +725,30 @@ footer .social-icons a:hover{
       font-size: 0.9rem;
   }
 }
-/* Telefon menü yan yana */
 @media (max-width: 768px) {
   .nav-links {
       display: flex;
-      flex-direction: row; /* Yan yana */
-      flex-wrap: wrap;     /* Taşarsa alta geçsin */
+      flex-direction: row; 
+      flex-wrap: wrap;     
       justify-content: center;
       gap: 8px;
   }
 
   .nav-links a {
-      font-size: 0.9rem;  /* Küçük ekranlarda yazı boyutu küçüldü */
+      font-size: 0.9rem; 
       padding: 6px 10px;
   }
 }
 @media (max-width: 768px) {
-  /* Home bölümündeki isim */
   .info-text h1 {
-      font-size: 2rem; /* Daha küçük */
-      white-space: nowrap; /* Satır kırılmasın */
+      font-size: 2rem; 
+      white-space: nowrap; 
   }
-
-  /* Altındaki Front-End Developer yazısı da küçülsün */
   .info-text h3 {
       font-size: 1rem;
   }
 }
+
 
 
 
