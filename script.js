@@ -76,7 +76,7 @@ particlesJS("particles", {
 
 const blogContents = {
   "bmu-inha": {
-    title: "Getting Accepted to BMU-INHA",
+    title: "Getting Accepted to BEU-INHA",
     text: `
 Getting accepted to BMU-INHA University was both an exciting and challenging experience for me. 
 The admission process involved several stages: filling out the application form, submitting documents, 
@@ -113,7 +113,7 @@ document.querySelectorAll('.open-blog').forEach((btn) => {
 
     if(postKey === "bmu-inha"){
       modalText.innerHTML += `
-        <img src="indir.jpg" alt="BMU-INHA" style="width:100%; margin-top:20px; border-radius:10px;">
+        <img src="indir.jpg" alt="BEU-INHA" style="width:100%; margin-top:20px; border-radius:10px;">
       `;
     }
 
@@ -146,3 +146,43 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Add this at the end of script.js
+
+// Close hamburger menu when a nav link is clicked (mobile UX)
+(function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.querySelectorAll('.navbar .nav-links a');
+
+  if (navToggle) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // only uncheck if it is checked (mobile)
+        if (navToggle.checked) navToggle.checked = false;
+      });
+    });
+
+    // also uncheck if window is resized above breakpoint to avoid stuck state
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720 && navToggle.checked) {
+        navToggle.checked = false;
+      }
+    });
+  }
+})();
+(function(){
+  const navToggle=document.getElementById('nav-toggle');
+  const navLinks=document.querySelectorAll('.navbar .nav-links a');
+  const closeBtn=document.createElement('button');
+  closeBtn.className='close-menu';
+  closeBtn.innerHTML="<i class='bx bx-x'></i>";
+  const closeLi=document.createElement('li');
+  closeLi.className='close-wrapper';
+  closeLi.appendChild(closeBtn);
+  const navLinksUl=document.querySelector('.navbar .nav-links');
+  if(navLinksUl && !navLinksUl.querySelector('.close-wrapper')) navLinksUl.insertBefore(closeLi,navLinksUl.firstChild);
+  if(navToggle){
+    navLinks.forEach(link=>{link.addEventListener('click',()=>{if(navToggle.checked)navToggle.checked=false})});
+    closeBtn.addEventListener('click',()=>{if(navToggle.checked)navToggle.checked=false});
+    window.addEventListener('resize',()=>{if(window.innerWidth>720&&navToggle.checked)navToggle.checked=false});
+  }
+})();
