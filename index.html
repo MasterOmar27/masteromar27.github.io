@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Omar Aliyev | Portfolio</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div id="particles"></div>
+        <nav class="navbar">
+            <div class="logo">Omar Aliyev</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="info-text glass-header">
+            <h1>Omar Aliyev</h1>
+            <h3>Frontend Developer & Creative Designer</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+
+        <div class="card">
+            <div class="info">
+                <h1>Who I Am</h1>
+                <p>
+                    I’m Omar Aliyev, a passionate frontend developer who loves creating visually appealing and
+                    interactive websites.
+                    I focus on combining modern design trends with clean, efficient code to deliver the best
+                    user experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+        <div class="header">
+            <h1>Projects & Skills</h1>
+        </div>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-devices'></i>
+                    <h1>Responsive Design</h1>
+                    <p>All my projects are fully responsive and optimized for different screen sizes.</p>
+                    <a href="https://github.com/MasterOmar27" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-code-alt'></i>
+                    <h1>Clean Code</h1>
+                    <p>Writing clean, maintainable, and efficient code is my top priority in every project.</p>
+                    <a href="https://github.com/MasterOmar27" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-paint'></i>
+                    <h1>Creative UI</h1>
+                    <p>I design interfaces that are not only functional but also visually engaging.</p>
+                    <a href="https://github.com/MasterOmar27" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="header">
+            <h1>Blog</h1>
+        </div>
+        <div class="feature-cards">
+            <div class="card" data-blog="bmu-inha">
+                <div class="info">
+                    <i class='bx bxs-graduation'></i>
+                    <h1>Getting Accepted to BMU-INHA</h1>
+                    <p>My experience and tips on being accepted to BMU-INHA University.</p>
+                    <button class="open-blog">Read Full Blog</button>
+                </div>
+            </div>
+
+            <div class="card" data-blog="post2">
+                <div class="info">
+                    <i class='bx bxs-notepad'></i>
+                    <h1>Project Case Studies</h1>
+                    <p>Detailed breakdowns of my projects, how they were built and the challenges I faced.</p>
+                    <button class="open-blog">Read Full Blog</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="blog-modal" class="blog-modal">
+            <div class="blog-modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="header">
+            <h1>Contact Me</h1>
+            <p><b>Get in touch with me for projects, collaborations, or just to say hi!</b></p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div><i class='bx bxs-phone'></i> +123 456 7890</div>
+                <div><i class='bx bxs-envelope'></i> omar@example.com</div>
+                <div><i class='bx bxs-map'></i> Baku, Azerbaijan</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://github.com/MasterOmar27" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom"><b>© 2025 Omar Aliyev | All Rights Reserved</b></p>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
