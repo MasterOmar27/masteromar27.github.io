@@ -74,7 +74,6 @@ particlesJS("particles", {
   retina_detect: true
 });
 
-// Blog içerikleri
 const blogContents = {
   "bmu-inha": {
     title: "Getting Accepted to BMU-INHA",
@@ -100,13 +99,11 @@ If you are aiming to get accepted to this university, stay organized, study cons
   }
 };
 
-// Modal elementleri
 const modal = document.getElementById('blog-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalText = document.getElementById('modal-text');
 const closeBtn = document.querySelector('.blog-modal .close');
 
-// Butona tıklayınca modal aç
 document.querySelectorAll('.open-blog').forEach((btn) => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.card');
@@ -114,7 +111,6 @@ document.querySelectorAll('.open-blog').forEach((btn) => {
     modalTitle.textContent = blogContents[postKey].title;
     modalText.innerHTML = blogContents[postKey].text;
 
-    // Yalnız BMU-INHA üçün şəkil əlavə et
     if(postKey === "bmu-inha"){
       modalText.innerHTML += `
         <img src="indir.jpg" alt="BMU-INHA" style="width:100%; margin-top:20px; border-radius:10px;">
@@ -125,12 +121,10 @@ document.querySelectorAll('.open-blog').forEach((btn) => {
   });
 });
 
-// Modal kapatma
 closeBtn.addEventListener('click', () => {
   modal.style.display = "none";
 });
 
-// Modal dışına tıklayınca kapatma
 window.addEventListener('click', (e) => {
   if (e.target == modal) {
     modal.style.display = "none";
@@ -151,3 +145,4 @@ window.addEventListener('scroll', function () {
     scrollTopButton.style.display = 'none';
   }
 });
+
