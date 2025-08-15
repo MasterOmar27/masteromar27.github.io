@@ -668,6 +668,114 @@ footer .social-icons a:hover{
     font-size: 2rem; 
     letter-spacing: 1px;
 }
+/* -------------------------
+   Responsive Ayarlar
+-------------------------- */
+
+/* Tablet ve küçük ekranlar */
+@media (max-width: 992px) {
+  .nav-links {
+      gap: 15px;
+  }
+
+  .feature-cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .contact-form {
+      width: 90%;
+  }
+}
+
+/* Mobil cihazlar */
+@media (max-width: 768px) {
+  nav.navbar {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .feature-cards {
+      grid-template-columns: 1fr;
+  }
+
+  .info-text h1 {
+      font-size: 2rem;
+  }
+
+  .info-text h3 {
+      font-size: 1rem;
+  }
+
+  .header h1 {
+      font-size: 1.6rem;
+  }
+
+  .card {
+      margin: 10px;
+  }
+}
+
+/* Çok küçük ekranlar (telefonlar) */
+@media (max-width: 480px) {
+  .info-text h1 {
+      font-size: 1.6rem;
+  }
+
+  .info-text h3 {
+      font-size: 0.9rem;
+  }
+
+  .header h1 {
+      font-size: 1.4rem;
+  }
+
+  .nav-links {
+      font-size: 0.9rem;
+  }
+
+  .contact-info div {
+      font-size: 0.9rem;
+  }
+}
+/* Telefon menü yan yana */
+@media (max-width: 768px) {
+  .nav-links {
+      display: flex;
+      flex-direction: row; /* Yan yana */
+      flex-wrap: wrap;     /* Taşarsa alta geçsin */
+      justify-content: center;
+      gap: 8px;
+  }
+
+  .nav-links a {
+      font-size: 0.9rem;  /* Küçük ekranlarda yazı boyutu küçüldü */
+      padding: 6px 10px;
+  }
+}
+@media (max-width: 768px) {
+  /* Home bölümündeki isim */
+  .info-text h1 {
+      font-size: 2rem; /* Daha küçük */
+      white-space: nowrap; /* Satır kırılmasın */
+  }
+
+  /* Altındaki Front-End Developer yazısı da küçülsün */
+  .info-text h3 {
+      font-size: 1rem;
+  }
+}
 
 
 
