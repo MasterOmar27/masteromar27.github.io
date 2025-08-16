@@ -88,7 +88,7 @@ I also used online resources provided by the university and tips from past stude
 
 The day I received my acceptance was incredibly joyful and rewarding. 
 This achievement gave me a strong motivation for both academic and personal growth. 
-BMU-INHA is not just an educational institution for me; it is a solid foundation for my future career.
+BEU-INHA is not just an educational institution for me; it is a solid foundation for my future career.
 
 If you are aiming to get accepted to this university, stay organized, study consistently, and keep your motivation high!
     `
@@ -145,4 +145,5 @@ window.addEventListener('scroll', function () {
     scrollTopButton.style.display = 'none';
   }
 });
+
 
